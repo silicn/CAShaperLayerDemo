@@ -16,25 +16,40 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fco-Sy-xsD">
-                        <rect key="frame" x="20" y="7" width="170" height="106"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLT-j5-MaR">
+                        <rect key="frame" x="27" y="8" width="240" height="104"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhQ-QH-1nA">
+                                <rect key="frame" x="8" y="8" width="224" height="88"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.35294117650000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="170" id="hC2-Gm-dbh"/>
-                            <constraint firstAttribute="height" constant="106" id="t7K-Hx-Qrf"/>
+                            <constraint firstAttribute="bottom" secondItem="yhQ-QH-1nA" secondAttribute="bottom" constant="8" id="07P-iA-vJo"/>
+                            <constraint firstAttribute="trailing" secondItem="yhQ-QH-1nA" secondAttribute="trailing" constant="8" id="H8O-kQ-nsD"/>
+                            <constraint firstItem="yhQ-QH-1nA" firstAttribute="top" secondItem="qLT-j5-MaR" secondAttribute="top" constant="8" id="cVv-3g-VXR"/>
+                            <constraint firstItem="yhQ-QH-1nA" firstAttribute="leading" secondItem="qLT-j5-MaR" secondAttribute="leading" constant="8" id="iwR-BI-6Bz"/>
                         </constraints>
-                    </imageView>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Fco-Sy-xsD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="7W7-gp-92r"/>
-                    <constraint firstItem="Fco-Sy-xsD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pig-Cv-iOT"/>
+                    <constraint firstItem="qLT-j5-MaR" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="2R9-5a-2So"/>
+                    <constraint firstItem="qLT-j5-MaR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Agz-a0-dKB"/>
+                    <constraint firstItem="qLT-j5-MaR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="19" id="okA-rS-RIo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qLT-j5-MaR" secondAttribute="trailing" constant="45" id="p8U-Wc-Sy9"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="bubbleView" destination="Fco-Sy-xsD" id="htT-bh-8CH"/>
+                <outlet property="TextLab" destination="yhQ-QH-1nA" id="Lca-it-FrX"/>
+                <outlet property="bubbleView" destination="qLT-j5-MaR" id="VfW-aX-4PQ"/>
+                <outlet property="leftCon" destination="okA-rS-RIo" id="dlP-jt-bQF"/>
+                <outlet property="rightCon" destination="p8U-Wc-Sy9" id="5U3-Ju-TSd"/>
             </connections>
             <point key="canvasLocation" x="34" y="15.5"/>
         </tableViewCell>

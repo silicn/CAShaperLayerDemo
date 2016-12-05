@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+
+#define kCure_Margin 5
+
+#define kCornerRaudis 5 
+
+
+
 @interface ChatTableViewCell : UITableViewCell
+
+@property (nonatomic, assign) BOOL isSender;
+
 
 @end

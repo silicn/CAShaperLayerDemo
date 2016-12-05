@@ -15,6 +15,9 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic, strong) NSMutableArray *dataSource;
+
+
 
 @end
 
@@ -28,6 +31,18 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"ChatTableViewCell" bundle:nil] forCellReuseIdentifier:@"chatcell"];
     
     self.tableView.rowHeight = 110;
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.dataSource = [NSMutableArray arrayWithCapacity:1];
+    
+    for (int i = 0; i < 20; i ++) {
+        CGFloat height = arc4random() %110;
+        if (height < 60) {
+            height = 60;
+        }
+        [self.dataSource addObject:@(height)];
+    }
     
     
     
@@ -88,7 +103,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return self.dataSource.count;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath  
+{
+    return [self.dataSource[indexPath.row] floatValue];
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -97,6 +118,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ChatTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"chatcell"];
+    cell.isSender = arc4random()%100 %2;
     return cell;
 }
 
