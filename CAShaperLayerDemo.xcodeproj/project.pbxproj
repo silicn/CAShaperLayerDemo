@@ -13,6 +13,8 @@
 		973475CA1DEFE9F2008B93F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973475C81DEFE9F2008B93F7 /* Main.storyboard */; };
 		973475CC1DEFE9F2008B93F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973475CB1DEFE9F2008B93F7 /* Assets.xcassets */; };
 		973475CF1DEFE9F2008B93F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973475CD1DEFE9F2008B93F7 /* LaunchScreen.storyboard */; };
+		973475FE1DF50551008B93F7 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 973475FC1DF50551008B93F7 /* ChatTableViewCell.m */; };
+		973475FF1DF50551008B93F7 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		973475CB1DEFE9F2008B93F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		973475CE1DEFE9F2008B93F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		973475D01DEFE9F2008B93F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		973475FB1DF50551008B93F7 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		973475FC1DF50551008B93F7 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,9 @@
 				973475C31DEFE9F2008B93F7 /* AppDelegate.m */,
 				973475C51DEFE9F2008B93F7 /* ViewController.h */,
 				973475C61DEFE9F2008B93F7 /* ViewController.m */,
+				973475FB1DF50551008B93F7 /* ChatTableViewCell.h */,
+				973475FC1DF50551008B93F7 /* ChatTableViewCell.m */,
+				973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */,
 				973475C81DEFE9F2008B93F7 /* Main.storyboard */,
 				973475CB1DEFE9F2008B93F7 /* Assets.xcassets */,
 				973475CD1DEFE9F2008B93F7 /* LaunchScreen.storyboard */,
@@ -139,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				973475CF1DEFE9F2008B93F7 /* LaunchScreen.storyboard in Resources */,
+				973475FF1DF50551008B93F7 /* ChatTableViewCell.xib in Resources */,
 				973475CC1DEFE9F2008B93F7 /* Assets.xcassets in Resources */,
 				973475CA1DEFE9F2008B93F7 /* Main.storyboard in Resources */,
 			);
@@ -152,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				973475C71DEFE9F2008B93F7 /* ViewController.m in Sources */,
+				973475FE1DF50551008B93F7 /* ChatTableViewCell.m in Sources */,
 				973475C41DEFE9F2008B93F7 /* AppDelegate.m in Sources */,
 				973475C11DEFE9F2008B93F7 /* main.m in Sources */,
 			);
@@ -316,6 +326,7 @@
 				973475D51DEFE9F2008B93F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
