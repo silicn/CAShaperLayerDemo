@@ -20,10 +20,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLT-j5-MaR" customClass="UIControl">
-                        <rect key="frame" x="27" y="8" width="240" height="104"/>
+                        <rect key="frame" x="59" y="8" width="208" height="104"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhQ-QH-1nA">
-                                <rect key="frame" x="8" y="8" width="224" height="88"/>
+                                <rect key="frame" x="8" y="8" width="192" height="88"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,16 +37,34 @@
                             <constraint firstItem="yhQ-QH-1nA" firstAttribute="leading" secondItem="qLT-j5-MaR" secondAttribute="leading" constant="8" id="iwR-BI-6Bz"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VWy-5k-zim">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.0" green="0.72549019609999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="0dk-f9-tHy"/>
+                            <constraint firstAttribute="width" constant="40" id="KOE-RI-1jw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="qLT-j5-MaR" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="2R9-5a-2So"/>
                     <constraint firstItem="qLT-j5-MaR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Agz-a0-dKB"/>
-                    <constraint firstItem="qLT-j5-MaR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="19" id="okA-rS-RIo"/>
+                    <constraint firstAttribute="topMargin" secondItem="VWy-5k-zim" secondAttribute="top" id="Jgn-6w-j4M"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="VWy-5k-zim" secondAttribute="leading" id="QSX-tu-ha0"/>
+                    <constraint firstItem="qLT-j5-MaR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="51" id="okA-rS-RIo"/>
                     <constraint firstAttribute="trailingMargin" secondItem="qLT-j5-MaR" secondAttribute="trailing" constant="45" id="p8U-Wc-Sy9"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="TextLab" destination="yhQ-QH-1nA" id="Lca-it-FrX"/>
+                <outlet property="avLeftCon" destination="QSX-tu-ha0" id="awT-Sb-27A"/>
+                <outlet property="avatarIMG" destination="VWy-5k-zim" id="tdu-e0-0Sx"/>
                 <outlet property="bubbleView" destination="qLT-j5-MaR" id="VfW-aX-4PQ"/>
                 <outlet property="leftCon" destination="okA-rS-RIo" id="dlP-jt-bQF"/>
                 <outlet property="rightCon" destination="p8U-Wc-Sy9" id="5U3-Ju-TSd"/>

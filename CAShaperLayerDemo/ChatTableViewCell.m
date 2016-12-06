@@ -18,6 +18,14 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightCon;
 @property (weak, nonatomic) IBOutlet UILabel *TextLab;
 
+@property (weak, nonatomic) IBOutlet UIImageView *avatarIMG;
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *avRightCon;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *avLeftCon;
+
+
 
 @end
 
@@ -30,7 +38,7 @@
     
     
     NSString *str = @"这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，";
-    NSString *subStr = [str substringToIndex:arc4random() % str.length];
+//    NSString *subStr = [str substringToIndex:arc4random() % str.length];
     
     self.TextLab.text = str;
     
@@ -139,14 +147,13 @@
 {
     [super layoutSubviews];
     
-    NSLog(@"layoutSubviews");
-    if (self.isSender) {
-        self.leftCon.constant = 80;
-        self.rightCon.constant = 10;
-    }else{
-        self.leftCon.constant = 10;
-        self.rightCon.constant = 80 ;
-    }
+    NSLog(@"layoutSubviews  %@",NSStringFromCGRect(self.frame));
+    
+    self.leftCon.constant = self.isSender?80:48;
+    self.rightCon.constant = self.isSender?48:80;
+    
+    self.avLeftCon.constant = self.isSender?-self.frame.size.width + 56:0;
+ 
 }
 
 - (void)setIsSender:(BOOL)isSender
