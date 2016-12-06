@@ -15,6 +15,8 @@
 		973475CF1DEFE9F2008B93F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973475CD1DEFE9F2008B93F7 /* LaunchScreen.storyboard */; };
 		973475FE1DF50551008B93F7 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 973475FC1DF50551008B93F7 /* ChatTableViewCell.m */; };
 		973475FF1DF50551008B93F7 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */; };
+		9734762C1DF6BB5C008B93F7 /* CureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9734762A1DF6BB5C008B93F7 /* CureViewController.m */; };
+		9734762D1DF6BB5C008B93F7 /* CureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9734762B1DF6BB5C008B93F7 /* CureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		973475FB1DF50551008B93F7 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
 		973475FC1DF50551008B93F7 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
 		973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		973476291DF6BB5C008B93F7 /* CureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CureViewController.h; sourceTree = "<group>"; };
+		9734762A1DF6BB5C008B93F7 /* CureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CureViewController.m; sourceTree = "<group>"; };
+		9734762B1DF6BB5C008B93F7 /* CureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CureViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,9 @@
 				973475C31DEFE9F2008B93F7 /* AppDelegate.m */,
 				973475C51DEFE9F2008B93F7 /* ViewController.h */,
 				973475C61DEFE9F2008B93F7 /* ViewController.m */,
+				973476291DF6BB5C008B93F7 /* CureViewController.h */,
+				9734762A1DF6BB5C008B93F7 /* CureViewController.m */,
+				9734762B1DF6BB5C008B93F7 /* CureViewController.xib */,
 				973475FB1DF50551008B93F7 /* ChatTableViewCell.h */,
 				973475FC1DF50551008B93F7 /* ChatTableViewCell.m */,
 				973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */,
@@ -150,6 +158,7 @@
 				973475FF1DF50551008B93F7 /* ChatTableViewCell.xib in Resources */,
 				973475CC1DEFE9F2008B93F7 /* Assets.xcassets in Resources */,
 				973475CA1DEFE9F2008B93F7 /* Main.storyboard in Resources */,
+				9734762D1DF6BB5C008B93F7 /* CureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9734762C1DF6BB5C008B93F7 /* CureViewController.m in Sources */,
 				973475C71DEFE9F2008B93F7 /* ViewController.m in Sources */,
 				973475FE1DF50551008B93F7 /* ChatTableViewCell.m in Sources */,
 				973475C41DEFE9F2008B93F7 /* AppDelegate.m in Sources */,

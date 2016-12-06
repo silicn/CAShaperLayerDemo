@@ -10,6 +10,9 @@
 
 #import "ChatTableViewCell.h"
 
+#import "CureViewController.h"
+
+
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -120,6 +123,14 @@
     ChatTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"chatcell"];
     cell.isSender = arc4random()%100 %2;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    CureViewController *vc = [CureViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
