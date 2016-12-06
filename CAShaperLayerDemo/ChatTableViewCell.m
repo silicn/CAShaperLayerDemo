@@ -11,7 +11,7 @@
 
 @interface ChatTableViewCell ()
 
-@property (weak, nonatomic) IBOutlet UIView *bubbleView;
+@property (weak, nonatomic) IBOutlet UIControl *bubbleView;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftCon;
 
@@ -29,13 +29,103 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     
     
-    NSString *str = @"这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，这事一段很长很长的文字，";
+    NSString *str = @"这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，这是一段很长很长的文字，";
     NSString *subStr = [str substringToIndex:arc4random() % str.length];
     
-    self.TextLab.text = subStr;
+    self.TextLab.text = str;
+    
+    
+    [self.bubbleView addTarget:self action:@selector(touchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.bubbleView addTarget:self action:@selector(touchDown:) forControlEvents:UIControlEventTouchDown];
+    
+    [self.bubbleView addTarget:self action:@selector(touchCancle:) forControlEvents:UIControlEventTouchCancel];
+    
+    
+    UILongPressGestureRecognizer *press = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(press:)]; 
+    
+    [self.bubbleView addGestureRecognizer:press];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuWillHidden:) name:UIMenuControllerWillHideMenuNotification object:nil];
+    
+    
     
     
     // Initialization code
+}
+
+
+- (void)press:(UILongPressGestureRecognizer *)press
+{
+    if (press.state == UIGestureRecognizerStateBegan) {
+        press.view.backgroundColor = [UIColor redColor];
+        self.TextLab.textColor = [UIColor whiteColor];
+        [self becomeFirstResponder];
+        UIMenuController *menu = [UIMenuController sharedMenuController];
+        
+        CGPoint point = [press locationInView:self.bubbleView];
+        
+        NSLog(@" point = %@",NSStringFromCGPoint(point));
+        
+        [menu setTargetRect:CGRectMake(point.x - 100, 0, 200, 40) inView:self.bubbleView];
+        [menu setMenuVisible:YES animated:YES];
+
+    }else if (press.state == UIGestureRecognizerStateEnded || press.state == UIGestureRecognizerStateCancelled){
+       // press.view.backgroundColor = [UIColor colorWithRed:252/255.0 green:90/255.0 blue:156/255.0 alpha:1.0];
+    }
+}
+
+- (void)menuWillHidden:(NSNotification  *)not
+{
+    self.bubbleView.backgroundColor = [UIColor colorWithRed:252/255.0 green:90/255.0 blue:156/255.0 alpha:1.0];
+    self.TextLab.textColor = [UIColor blackColor];
+    
+}
+
+- (void)touchUpInside:(UIControl *)view
+{
+    
+}
+
+- (void)touchDown:(UIControl *)view
+{
+       
+    
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    if (action == @selector(copy:)) {
+        return YES;
+    }
+    
+    if (action == @selector(delete:)) {
+        return YES;
+    }
+    return NO;
+}
+
+- (void)touchCancle:(UIControl *)view
+{
+   
+}
+
+
+- (void)copy:(id)sender
+{
+    
+}
+
+
+- (void)delete:(id)sender
+{
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -50,8 +140,6 @@
     [super layoutSubviews];
     
     NSLog(@"layoutSubviews");
-    
-    
     if (self.isSender) {
         self.leftCon.constant = 80;
         self.rightCon.constant = 10;
@@ -88,21 +176,18 @@
         //右上角圆弧
         [path addArcWithCenter:CGPointMake(CGRectGetWidth(self.bubbleView.frame) - 10, 5) radius:5 startAngle:M_PI*3/2 endAngle:0 clockwise:YES];
         //右竖线
-        [path addLineToPoint:CGPointMake(CGRectGetWidth(self.bubbleView.frame) - 5, 10)];
-        
+        [path addLineToPoint:CGPointMake(CGRectGetWidth(self.bubbleView.frame) - 5, 13)];
         //三角形
-        [path addQuadCurveToPoint:CGPointMake(CGRectGetWidth(self.bubbleView.frame) - 5, 16) controlPoint:CGPointMake(CGRectGetWidth(self.bubbleView.frame) + 5, 8)];
+        [path addQuadCurveToPoint:CGPointMake(CGRectGetWidth(self.bubbleView.frame) - 5, 20) controlPoint:CGPointMake(CGRectGetWidth(self.bubbleView.frame) + 5, 5)];
         //右竖线
         [path addLineToPoint:CGPointMake(CGRectGetWidth(self.bubbleView.frame) - 5, CGRectGetHeight(self.bubbleView.frame) - 5)];
-        
         //右下角圆弧
         [path addArcWithCenter:CGPointMake(CGRectGetWidth(self.bubbleView.frame) - 10, CGRectGetHeight(self.bubbleView.frame) - 5) radius:5 startAngle:0 endAngle:M_PI/2 clockwise:YES];
         //底部横线
         [path addLineToPoint:CGPointMake(5, CGRectGetWidth(self.bubbleView.frame))];
         
         //左下角圆弧
-        [path addArcWithCenter:CGPointMake(5, CGRectGetWidth(self.bubbleView.frame) - 5) radius:5 startAngle:M_PI/2 endAngle:M_PI clockwise:YES];
-        
+        [path addArcWithCenter:CGPointMake(5, CGRectGetHeight(self.bubbleView.frame) - 5) radius:5 startAngle:M_PI/2 endAngle:M_PI clockwise:YES];
         
     }else{
     
@@ -136,6 +221,12 @@
     self.bubbleView.layer.mask = layer;
     
 
+}
+
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
