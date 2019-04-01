@@ -22,4 +22,14 @@
     return self;
 }
 
+- (id)initWithName:(NSString *)name compy:(NSString *)compy
+{
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.compy = compy;
+    }
+    return self;
+}
+
 @end

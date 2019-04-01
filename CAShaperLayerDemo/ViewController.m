@@ -12,6 +12,9 @@
 
 #import "CureViewController.h"
 
+#import "Staff.h"
+
+
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -46,6 +49,10 @@
         }
         [self.dataSource addObject:@(height)];
     }
+    
+    Staff *staff = [[Staff alloc]initWithName:@"小花" compy:@"北京"];
+    
+    NSLog(@"%@",staff.name);
     
     
     
