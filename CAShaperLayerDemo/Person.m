@@ -15,6 +15,7 @@
     self = [super init];
     if (self) {
         self.name = @"xiaoming";
+        self.age = 20;
     }
     return self;
 }
