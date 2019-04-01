@@ -10,4 +10,13 @@
 
 @implementation Person
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.name = @"xiaoming";
+    }
+    return self;
+}
+
 @end
