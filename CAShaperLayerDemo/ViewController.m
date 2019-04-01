@@ -56,6 +56,9 @@
     
     NSLog(@"list = %@",staff.compy);
     
+      NSLog(@"list = %@",staff.compy);
+      NSLog(@"list = %@",staff.compy);
+    
     
     
 //    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(30, 100, 200, 200)];
