@@ -16,6 +16,8 @@
     if (self) {
         self.name = @"xiaoming";
         self.age = 20;
+        
+        NSLog(@"%@    %d",self.name,self.age);
     }
     return self;
 }
