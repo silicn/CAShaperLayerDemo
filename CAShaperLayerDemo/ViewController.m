@@ -56,7 +56,9 @@
     NSLog(@"list = %@",staff.compy);
     NSLog(@"合并分支");
     
-    NSLog(@"姓名：%@   公司：%@",staff.name,staff.compy);;
+    NSLog(@"姓名：%@   公司：%@",staff.name,staff.compy);
+    
+    NSLog(@"z-test");
     
     
     
