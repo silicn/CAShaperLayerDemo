@@ -53,14 +53,10 @@
     Staff *staff = [[Staff alloc]initWithName:@"小花" compy:@"北京"];
     
     NSLog(@"%@",staff.name);
-    
     NSLog(@"list = %@",staff.compy);
-    
-    NSLog(@"list = %@",staff.compy);
-    
-    NSLog(@"list = %@",staff.compy);
-    
     NSLog(@"合并分支");
+    
+    NSLog(@"姓名：%@   公司：%@",staff.name,staff.compy);;
     
     
     
