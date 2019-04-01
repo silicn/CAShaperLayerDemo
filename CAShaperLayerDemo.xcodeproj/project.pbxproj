@@ -17,6 +17,7 @@
 		973475FF1DF50551008B93F7 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */; };
 		9734762C1DF6BB5C008B93F7 /* CureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9734762A1DF6BB5C008B93F7 /* CureViewController.m */; };
 		9734762D1DF6BB5C008B93F7 /* CureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9734762B1DF6BB5C008B93F7 /* CureViewController.xib */; };
+		97A8116D2251F3090080D483 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A8116C2251F3090080D483 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		973476291DF6BB5C008B93F7 /* CureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CureViewController.h; sourceTree = "<group>"; };
 		9734762A1DF6BB5C008B93F7 /* CureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CureViewController.m; sourceTree = "<group>"; };
 		9734762B1DF6BB5C008B93F7 /* CureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CureViewController.xib; sourceTree = "<group>"; };
+		97A8116B2251F3090080D483 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		97A8116C2251F3090080D483 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				973475FB1DF50551008B93F7 /* ChatTableViewCell.h */,
 				973475FC1DF50551008B93F7 /* ChatTableViewCell.m */,
 				973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */,
+				97A8116B2251F3090080D483 /* Person.h */,
+				97A8116C2251F3090080D483 /* Person.m */,
 				973475C81DEFE9F2008B93F7 /* Main.storyboard */,
 				973475CB1DEFE9F2008B93F7 /* Assets.xcassets */,
 				973475CD1DEFE9F2008B93F7 /* LaunchScreen.storyboard */,
@@ -136,6 +141,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -169,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A8116D2251F3090080D483 /* Person.m in Sources */,
 				9734762C1DF6BB5C008B93F7 /* CureViewController.m in Sources */,
 				973475C71DEFE9F2008B93F7 /* ViewController.m in Sources */,
 				973475FE1DF50551008B93F7 /* ChatTableViewCell.m in Sources */,
