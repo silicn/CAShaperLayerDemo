@@ -10,4 +10,16 @@
 
 @implementation Staff
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.name = @"xiaoming";
+        self.compy = @"GuanTong";
+        
+        NSLog(@"%@    %@",self.name,self.compy);
+    }
+    return self;
+}
+
 @end
