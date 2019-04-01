@@ -56,8 +56,11 @@
     
     NSLog(@"list = %@",staff.compy);
     
-      NSLog(@"list = %@",staff.compy);
-      NSLog(@"list = %@",staff.compy);
+    NSLog(@"list = %@",staff.compy);
+    
+    NSLog(@"list = %@",staff.compy);
+    
+    NSLog(@"合并分支");
     
     
     
