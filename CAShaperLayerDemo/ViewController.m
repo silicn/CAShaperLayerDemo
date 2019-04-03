@@ -78,7 +78,7 @@
     
     NSLog(@"this is nothing");
     
-    NSLog(@"branch_1提交到分支");
+    NSLog(@"branch_1提交到分支 第2次");
     
 //    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(30, 100, 200, 200)];
 //    view.backgroundColor = [UIColor cyanColor];
