@@ -18,7 +18,7 @@
 		9734762C1DF6BB5C008B93F7 /* CureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9734762A1DF6BB5C008B93F7 /* CureViewController.m */; };
 		9734762D1DF6BB5C008B93F7 /* CureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9734762B1DF6BB5C008B93F7 /* CureViewController.xib */; };
 		97A8116D2251F3090080D483 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A8116C2251F3090080D483 /* Person.m */; };
-		97A81170225207690080D483 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A8116F225207690080D483 /* Staff.m */; };
+		97A8117322520E400080D483 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A8117222520E400080D483 /* Staff.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,8 @@
 		9734762B1DF6BB5C008B93F7 /* CureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CureViewController.xib; sourceTree = "<group>"; };
 		97A8116B2251F3090080D483 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		97A8116C2251F3090080D483 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		97A8116E225207690080D483 /* Staff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
-		97A8116F225207690080D483 /* Staff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
+		97A8117122520E300080D483 /* Staff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
+		97A8117222520E400080D483 /* Staff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +74,8 @@
 		973475BE1DEFE9F2008B93F7 /* CAShaperLayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				97A8117122520E300080D483 /* Staff.h */,
+				97A8117222520E400080D483 /* Staff.m */,
 				973475C21DEFE9F2008B93F7 /* AppDelegate.h */,
 				973475C31DEFE9F2008B93F7 /* AppDelegate.m */,
 				973475C51DEFE9F2008B93F7 /* ViewController.h */,
@@ -86,8 +88,6 @@
 				973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */,
 				97A8116B2251F3090080D483 /* Person.h */,
 				97A8116C2251F3090080D483 /* Person.m */,
-				97A8116E225207690080D483 /* Staff.h */,
-				97A8116F225207690080D483 /* Staff.m */,
 				973475C81DEFE9F2008B93F7 /* Main.storyboard */,
 				973475CB1DEFE9F2008B93F7 /* Assets.xcassets */,
 				973475CD1DEFE9F2008B93F7 /* LaunchScreen.storyboard */,
@@ -182,7 +182,7 @@
 			files = (
 				97A8116D2251F3090080D483 /* Person.m in Sources */,
 				9734762C1DF6BB5C008B93F7 /* CureViewController.m in Sources */,
-				97A81170225207690080D483 /* Staff.m in Sources */,
+				97A8117322520E400080D483 /* Staff.m in Sources */,
 				973475C71DEFE9F2008B93F7 /* ViewController.m in Sources */,
 				973475FE1DF50551008B93F7 /* ChatTableViewCell.m in Sources */,
 				973475C41DEFE9F2008B93F7 /* AppDelegate.m in Sources */,

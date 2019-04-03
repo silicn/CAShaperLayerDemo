@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy)NSString *compy;
 
+
+- (id)initWithName:(NSString *)name compy:(NSString *)compy;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
