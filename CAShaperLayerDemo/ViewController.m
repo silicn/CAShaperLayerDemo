@@ -86,6 +86,10 @@
     
     NSLog(@"branch_2提交到分支");
     
+    
+    
+    NSLog(@"branch_1第三次提交分支");
+    
 //    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(30, 100, 200, 200)];
 //    view.backgroundColor = [UIColor cyanColor];
 //    [self.view addSubview:view];
