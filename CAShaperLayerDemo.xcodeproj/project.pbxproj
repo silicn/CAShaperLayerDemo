@@ -19,6 +19,7 @@
 		9734762D1DF6BB5C008B93F7 /* CureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9734762B1DF6BB5C008B93F7 /* CureViewController.xib */; };
 		97A8116D2251F3090080D483 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A8116C2251F3090080D483 /* Person.m */; };
 		97A8117322520E400080D483 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A8117222520E400080D483 /* Staff.m */; };
+		97C0BECD22550E9B0097C650 /* NSString+SLLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C0BECB22550E9B0097C650 /* NSString+SLLimit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		97A8116C2251F3090080D483 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		97A8117122520E300080D483 /* Staff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
 		97A8117222520E400080D483 /* Staff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
+		97C0BECB22550E9B0097C650 /* NSString+SLLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SLLimit.m"; sourceTree = "<group>"; };
+		97C0BECC22550E9B0097C650 /* NSString+SLLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SLLimit.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				973475FD1DF50551008B93F7 /* ChatTableViewCell.xib */,
 				97A8116B2251F3090080D483 /* Person.h */,
 				97A8116C2251F3090080D483 /* Person.m */,
+				97C0BECC22550E9B0097C650 /* NSString+SLLimit.h */,
+				97C0BECB22550E9B0097C650 /* NSString+SLLimit.m */,
 				973475C81DEFE9F2008B93F7 /* Main.storyboard */,
 				973475CB1DEFE9F2008B93F7 /* Assets.xcassets */,
 				973475CD1DEFE9F2008B93F7 /* LaunchScreen.storyboard */,
@@ -186,6 +191,7 @@
 				973475C71DEFE9F2008B93F7 /* ViewController.m in Sources */,
 				973475FE1DF50551008B93F7 /* ChatTableViewCell.m in Sources */,
 				973475C41DEFE9F2008B93F7 /* AppDelegate.m in Sources */,
+				97C0BECD22550E9B0097C650 /* NSString+SLLimit.m in Sources */,
 				973475C11DEFE9F2008B93F7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
