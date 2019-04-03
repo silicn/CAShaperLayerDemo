@@ -60,6 +60,8 @@
     
     NSLog(@"z-test");
     
+    NSLog(@"this is nothing");
+    
     
     
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(30, 100, 200, 200)];
