@@ -16,6 +16,7 @@
 
 #import "NSString+SLLimit.h"
 
+#import "Branch_2Test.h"
 
 
 
@@ -41,15 +42,10 @@
     NSString *str3 = @"打死还是345";
     
     NSLog(@"string = %@",[string isOnlyContainLimitChinese] ? @"是":@"否");
-     NSLog(@"str1 = %@",[str1 isOnlyContainLimitChinese] ? @"是":@"否");
-     NSLog(@"str2 = %@",[str2 isOnlyContainLimitChinese] ? @"是":@"否");
-     NSLog(@"str3 = %@",[str3 isOnlyContainLimitChinese] ? @"是":@"否");
-    
-    
-//    UITextView
-////     NSLog(@"str = %@",[string isOnlyContainLimitChinese] ? @"是":@"否");
-//    
-//    
+    NSLog(@"str1 = %@",[str1 isOnlyContainLimitChinese] ? @"是":@"否");
+    NSLog(@"str2 = %@",[str2 isOnlyContainLimitChinese] ? @"是":@"否");
+    NSLog(@"str3 = %@",[str3 isOnlyContainLimitChinese] ? @"是":@"否");
+      
     [self.tableView registerNib:[UINib nibWithNibName:@"ChatTableViewCell" bundle:nil] forCellReuseIdentifier:@"chatcell"];
     
     self.tableView.rowHeight = 110;
@@ -74,24 +70,10 @@
     
     NSLog(@"姓名：%@   公司：%@",staff.name,staff.compy);
     
-    NSLog(@"z-test");
+    Branch_2Test *test = [Branch_2Test new];
     
-    NSLog(@"this is nothing");
-    
-    NSLog(@"branch_1提交到分支 第2次");
-    
-    
-    
-    
-    
-    NSLog(@"branch_2提交到分支");
-    
-    
-    
-    NSLog(@"branch_1第三次提交分支");
-    
-    
-    NSLog(@"branch_1第四次提交分支测试");
+    test.name = @"test";
+    test.age = 19;
 
     
 //    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(30, 100, 200, 200)];
