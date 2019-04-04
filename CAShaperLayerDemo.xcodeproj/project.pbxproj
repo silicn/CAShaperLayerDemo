@@ -20,6 +20,7 @@
 		97A8116D2251F3090080D483 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A8116C2251F3090080D483 /* Person.m */; };
 		97A8117322520E400080D483 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A8117222520E400080D483 /* Staff.m */; };
 		97C0BECD22550E9B0097C650 /* NSString+SLLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C0BECB22550E9B0097C650 /* NSString+SLLimit.m */; };
+		97C0BEDC2255CD750097C650 /* Branch_2Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C0BEDA2255CD740097C650 /* Branch_2Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		97A8117222520E400080D483 /* Staff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
 		97C0BECB22550E9B0097C650 /* NSString+SLLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SLLimit.m"; sourceTree = "<group>"; };
 		97C0BECC22550E9B0097C650 /* NSString+SLLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SLLimit.h"; sourceTree = "<group>"; };
+		97C0BEDA2255CD740097C650 /* Branch_2Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Branch_2Test.m; sourceTree = "<group>"; };
+		97C0BEDB2255CD740097C650 /* Branch_2Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Branch_2Test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				97A8116C2251F3090080D483 /* Person.m */,
 				97C0BECC22550E9B0097C650 /* NSString+SLLimit.h */,
 				97C0BECB22550E9B0097C650 /* NSString+SLLimit.m */,
+				97C0BEDB2255CD740097C650 /* Branch_2Test.h */,
+				97C0BEDA2255CD740097C650 /* Branch_2Test.m */,
 				973475C81DEFE9F2008B93F7 /* Main.storyboard */,
 				973475CB1DEFE9F2008B93F7 /* Assets.xcassets */,
 				973475CD1DEFE9F2008B93F7 /* LaunchScreen.storyboard */,
@@ -192,6 +197,7 @@
 				973475FE1DF50551008B93F7 /* ChatTableViewCell.m in Sources */,
 				973475C41DEFE9F2008B93F7 /* AppDelegate.m in Sources */,
 				97C0BECD22550E9B0097C650 /* NSString+SLLimit.m in Sources */,
+				97C0BEDC2255CD750097C650 /* Branch_2Test.m in Sources */,
 				973475C11DEFE9F2008B93F7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
