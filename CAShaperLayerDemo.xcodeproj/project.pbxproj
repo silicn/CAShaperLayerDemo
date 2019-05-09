@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9462F39C7D71778B040073B2 /* libPods-CAShaperLayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD51D211DA19158F57BE9D6E /* libPods-CAShaperLayerDemo.a */; };
 		973475C11DEFE9F2008B93F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 973475C01DEFE9F2008B93F7 /* main.m */; };
 		973475C41DEFE9F2008B93F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 973475C31DEFE9F2008B93F7 /* AppDelegate.m */; };
 		973475C71DEFE9F2008B93F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973475C61DEFE9F2008B93F7 /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		219905E1465A9E648D2F87F0 /* Pods-CAShaperLayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAShaperLayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-CAShaperLayerDemo/Pods-CAShaperLayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4589C423C641C80F38FE47BB /* Pods-CAShaperLayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAShaperLayerDemo.release.xcconfig"; path = "Target Support Files/Pods-CAShaperLayerDemo/Pods-CAShaperLayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		973475BC1DEFE9F2008B93F7 /* CAShaperLayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAShaperLayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		973475C01DEFE9F2008B93F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		973475C21DEFE9F2008B93F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		97C0BECC22550E9B0097C650 /* NSString+SLLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SLLimit.h"; sourceTree = "<group>"; };
 		97C0BEDA2255CD740097C650 /* Branch_2Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Branch_2Test.m; sourceTree = "<group>"; };
 		97C0BEDB2255CD740097C650 /* Branch_2Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Branch_2Test.h; sourceTree = "<group>"; };
+		CD51D211DA19158F57BE9D6E /* libPods-CAShaperLayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CAShaperLayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +59,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9462F39C7D71778B040073B2 /* libPods-CAShaperLayerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AD790071A30C068820A6046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD51D211DA19158F57BE9D6E /* libPods-CAShaperLayerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DBD1F07CBD8888207669B1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				219905E1465A9E648D2F87F0 /* Pods-CAShaperLayerDemo.debug.xcconfig */,
+				4589C423C641C80F38FE47BB /* Pods-CAShaperLayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		973475B31DEFE9F2008B93F7 = {
 			isa = PBXGroup;
 			children = (
 				973475BE1DEFE9F2008B93F7 /* CAShaperLayerDemo */,
 				973475BD1DEFE9F2008B93F7 /* Products */,
+				6DBD1F07CBD8888207669B1B /* Pods */,
+				3AD790071A30C068820A6046 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 973475D31DEFE9F2008B93F7 /* Build configuration list for PBXNativeTarget "CAShaperLayerDemo" */;
 			buildPhases = (
+				501717EF988CD8ACAEC98327 /* [CP] Check Pods Manifest.lock */,
 				973475B81DEFE9F2008B93F7 /* Sources */,
 				973475B91DEFE9F2008B93F7 /* Frameworks */,
 				973475BA1DEFE9F2008B93F7 /* Resources */,
@@ -184,6 +210,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		501717EF988CD8ACAEC98327 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CAShaperLayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		973475B81DEFE9F2008B93F7 /* Sources */ = {
@@ -314,6 +365,7 @@
 		};
 		973475D41DEFE9F2008B93F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 219905E1465A9E648D2F87F0 /* Pods-CAShaperLayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ATSXJ57D57;
@@ -329,6 +381,7 @@
 		};
 		973475D51DEFE9F2008B93F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4589C423C641C80F38FE47BB /* Pods-CAShaperLayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ATSXJ57D57;

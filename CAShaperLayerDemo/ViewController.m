@@ -26,54 +26,94 @@
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
+@property (nonatomic, assign) int age;
+
+@property (nonatomic, strong) NSString *hehe;
+
+@property (nonatomic, weak)UIButton *btn;
 
 
 @end
 
 @implementation ViewController
 
+- (void)test 
+{
+  __block  NSString * name = @"nihao";
+    void (^block)() = ^{
+        self.age = 20;
+        self.hehe = @"nima";
+        name = @"shenme";
+    };
+    block();
+    
+    NSLog(@"%@",name);
+   
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.age  = 10;
+    self.hehe = @"shizai";
     
-    NSString *string = @"你好啊打算的阿斯顿哈斯哦";
-    NSString *str1 = @"但还是低啊是1";
-    NSString *str2 = @"大神解答&";
-    NSString *str3 = @"打死还是345";
+    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    NSLog(@"btn = %@",self.btn);
+   
+    [self test];
     
-    NSLog(@"string = %@",[string isOnlyContainLimitChinese] ? @"是":@"否");
-    NSLog(@"str1 = %@",[str1 isOnlyContainLimitChinese] ? @"是":@"否");
-    NSLog(@"str2 = %@",[str2 isOnlyContainLimitChinese] ? @"是":@"否");
-    NSLog(@"str3 = %@",[str3 isOnlyContainLimitChinese] ? @"是":@"否");
-      
-    [self.tableView registerNib:[UINib nibWithNibName:@"ChatTableViewCell" bundle:nil] forCellReuseIdentifier:@"chatcell"];
+     NSLog(@"%d",self.age);
+    NSLog(@"%@",self.hehe);
     
-    self.tableView.rowHeight = 110;
+//    NSString *string = @"你好啊打算的阿斯顿哈斯哦";
+//    NSString *str1 = @"但还是低啊是1";
+//    NSString *str2 = @"大神解答&";
+//    NSString *str3 = @"打死还是345";
+//    
+//    NSLog(@"string = %@",[string isOnlyContainLimitChinese] ? @"是":@"否");
+//    NSLog(@"str1 = %@",[str1 isOnlyContainLimitChinese] ? @"是":@"否");
+//    NSLog(@"str2 = %@",[str2 isOnlyContainLimitChinese] ? @"是":@"否");
+//    NSLog(@"str3 = %@",[str3 isOnlyContainLimitChinese] ? @"是":@"否");
+//      
+//    [self.tableView registerNib:[UINib nibWithNibName:@"ChatTableViewCell" bundle:nil] forCellReuseIdentifier:@"chatcell"];
+//    
+//    self.tableView.rowHeight = 110;
+//    
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    
+//    self.dataSource = [NSMutableArray arrayWithCapacity:1];
+//    
+//    for (int i = 0; i < 20; i ++) {
+//        CGFloat height = arc4random() %110;
+//        if (height < 60) {
+//            height = 60;
+//        }
+//        [self.dataSource addObject:@(height)];
+//    }
+//    
+//    Staff *staff = [[Staff alloc]initWithName:@"小花" compy:@"北京"];
+//    
+//    NSLog(@"%@",staff.name);
+//    NSLog(@"list = %@",staff.compy);
+//    NSLog(@"合并分支");
+//    
+//    NSLog(@"姓名：%@   公司：%@",staff.name,staff.compy);
+//    
+//    Branch_2Test *test = [Branch_2Test new];
+//    
+//    test.name = @"test";
+//    test.age = 19;
     
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    NSURL *baseUrl =[NSURL URLWithString:@"http://www.baidu.com/index/path"];
     
-    self.dataSource = [NSMutableArray arrayWithCapacity:1];
+    NSURL *url1  = [NSURL URLWithString:@"foo?url1" relativeToURL:baseUrl];
+    NSURL *url2  = [NSURL URLWithString:@"/foo?url1" relativeToURL:baseUrl];
     
-    for (int i = 0; i < 20; i ++) {
-        CGFloat height = arc4random() %110;
-        if (height < 60) {
-            height = 60;
-        }
-        [self.dataSource addObject:@(height)];
-    }
-    
-    Staff *staff = [[Staff alloc]initWithName:@"小花" compy:@"北京"];
-    
-    NSLog(@"%@",staff.name);
-    NSLog(@"list = %@",staff.compy);
-    NSLog(@"合并分支");
-    
-    NSLog(@"姓名：%@   公司：%@",staff.name,staff.compy);
-    
-    Branch_2Test *test = [Branch_2Test new];
-    
-    test.name = @"test";
-    test.age = 19;
+//     url1 = http://www.baidu.com/index/path/foo?url1/
+//     url2 = http://www.baidu.com/foo?url1/
+    NSLog(@"url1 = %@",[url1 absoluteString]);
+    NSLog(@"url2 = %@",[url2 absoluteString]);
 
     
 //    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(30, 100, 200, 200)];
